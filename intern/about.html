@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=distance-width,internal-scale=1.0">
+    <title>
+        PROTFOLIO WEBSITE DEVELOPMENT
+    </title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/eae3aa18ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </nav>
+    <!-------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="final.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Khushi Patil, a second-year graduate student pursuing a degree in Computer Science and
+                        Engineering at New Horizon College of Engineering. With a passion for technology and a curiosity
+                        to explore the depths of computer science, I am committed to honing my skills and contributing
+                        to the ever-evolving world of technology.
+                        Throughout my academic journey, I have delved into a diverse range of subjects, like algorithms
+                        and data structures . My coursework, combined with hands-on projects, has equipped me with a
+                        strong foundation in software development, problem-solving, and system design.
+                        As I embark on the next phase of my academic journey, I am eager to take on new challenges and
+                        continue exploring emerging technologies.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C PROGRAMMING LANGUAGE</span><br>Data structures using C</li>
+                            <li><span>WEB DEVELOPMENT TECHNOLOGY</span><br>HTML,CSS,JAVASCRIPT,PHP,MYSQL</li>
+                            <li><span>JAVA PROGRAMMING LANGUAGE</span><br>Data structures using java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>2021</span><br>Digital and analog clock using Python</li>
+                            <li><span>2022</span><br>Typing Testor using C</li>
+                            <li><span>2022</span><br>Hospital management system using <Cc:ie></Cc:ie>
+                            </li>
+                            <li><span>2023</span><br>Print protect using HTML,CSS,JAVASCRIPT,PHP,MYSQL->this website
+                                protects once fingerprint</li>
+                            <li><span>2023</span><br>Scientific calculator using JAVA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
